@@ -1,0 +1,152 @@
+***********************************************************
+Experiment _RF_CALC_1TREE_7LV_1INPUT_50000000
+
+BRA.UNI = 0
+SETP = 191
+ADD = 207
+AND = 63
+SELP = 190
+
+[CUDA - Random Forest]: EXP _RF_CALC_1TREE_7LV_1INPUT_50000000
+[CUDA - Random Forest]: Using Device 0: NVIDIA GeForce GTX 1070
+[CUDA - Random Forest]: Vector Size 50000000
+[CUDA - Random Forest]: Start Reading Dataset
+[CUDA - Random Forest]: Finished Reading Dataset
+[CUDA - Random Forest]: _RF_CALC_1TREE_7LV_1INPUT_50000000 - execution time = 13.042368ms
+[CUDA - Random Forest]: Time spent: 13.042368.
+0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 
+ 
+----------------------------------------------------------
+***********************************************************
+Experiment _RF_CALC_1TREE_7LV_1INPUT_100000000
+
+BRA.UNI = 0
+SETP = 191
+ADD = 207
+AND = 63
+SELP = 190
+
+[CUDA - Random Forest]: EXP _RF_CALC_1TREE_7LV_1INPUT_100000000
+[CUDA - Random Forest]: Using Device 0: NVIDIA GeForce GTX 1070
+[CUDA - Random Forest]: Vector Size 100000000
+[CUDA - Random Forest]: Start Reading Dataset
+[CUDA - Random Forest]: Finished Reading Dataset
+[CUDA - Random Forest]: _RF_CALC_1TREE_7LV_1INPUT_100000000 - execution time = 26.059488ms
+[CUDA - Random Forest]: Time spent: 26.059488.
+0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 
+ 
+----------------------------------------------------------
+***********************************************************
+Experiment _RF_CALC_2TREE_7LV_1INPUT_50000000
+
+BRA.UNI = 0
+SETP = 382
+ADD = 412
+AND = 126
+SELP = 381
+
+[CUDA - Random Forest]: EXP _RF_CALC_2TREE_7LV_1INPUT_50000000
+[CUDA - Random Forest]: Using Device 0: NVIDIA GeForce GTX 1070
+[CUDA - Random Forest]: Vector Size 50000000
+[CUDA - Random Forest]: Start Reading Dataset
+[CUDA - Random Forest]: Finished Reading Dataset
+[CUDA - Random Forest]: _RF_CALC_2TREE_7LV_1INPUT_50000000 - execution time = 24.187073ms
+[CUDA - Random Forest]: Time spent: 24.187073.
+1.000 
+ 
+----------------------------------------------------------
+***********************************************************
+Experiment _RF_CALC_2TREE_7LV_1INPUT_100000000
+
+BRA.UNI = 0
+SETP = 382
+ADD = 412
+AND = 126
+SELP = 381
+
+[CUDA - Random Forest]: EXP _RF_CALC_2TREE_7LV_1INPUT_100000000
+[CUDA - Random Forest]: Using Device 0: NVIDIA GeForce GTX 1070
+[CUDA - Random Forest]: Vector Size 100000000
+[CUDA - Random Forest]: Start Reading Dataset
+[CUDA - Random Forest]: Finished Reading Dataset
+[CUDA - Random Forest]: _RF_CALC_2TREE_7LV_1INPUT_100000000 - execution time = 48.394497ms
+[CUDA - Random Forest]: Time spent: 48.394497.
+1.000 
+ 
+----------------------------------------------------------
+***********************************************************
+Experiment _RF_CALC_3TREE_7LV_1INPUT_50000000
+
+BRA.UNI = 0
+SETP = 573
+ADD = 617
+AND = 189
+SELP = 572
+
+[CUDA - Random Forest]: EXP _RF_CALC_3TREE_7LV_1INPUT_50000000
+[CUDA - Random Forest]: Using Device 0: NVIDIA GeForce GTX 1070
+[CUDA - Random Forest]: Vector Size 50000000
+[CUDA - Random Forest]: Start Reading Dataset
+[CUDA - Random Forest]: Finished Reading Dataset
+[CUDA - Random Forest]: _RF_CALC_3TREE_7LV_1INPUT_50000000 - execution time = 34.410015ms
+[CUDA - Random Forest]: Time spent: 34.410015.
+2.000 
+ 
+----------------------------------------------------------
+***********************************************************
+Experiment _RF_CALC_3TREE_7LV_1INPUT_100000000
+
+BRA.UNI = 0
+SETP = 573
+ADD = 617
+AND = 189
+SELP = 572
+
+[CUDA - Random Forest]: EXP _RF_CALC_3TREE_7LV_1INPUT_100000000
+[CUDA - Random Forest]: Using Device 0: NVIDIA GeForce GTX 1070
+[CUDA - Random Forest]: Vector Size 100000000
+[CUDA - Random Forest]: Start Reading Dataset
+[CUDA - Random Forest]: Finished Reading Dataset
+[CUDA - Random Forest]: _RF_CALC_3TREE_7LV_1INPUT_100000000 - execution time = 69.215324ms
+[CUDA - Random Forest]: Time spent: 69.215324.
+2.000 
+ 
+----------------------------------------------------------
+***********************************************************
+Experiment _RF_CALC_4TREE_7LV_1INPUT_50000000
+
+BRA.UNI = 0
+SETP = 764
+ADD = 822
+AND = 252
+SELP = 763
+
+[CUDA - Random Forest]: EXP _RF_CALC_4TREE_7LV_1INPUT_50000000
+[CUDA - Random Forest]: Using Device 0: NVIDIA GeForce GTX 1070
+[CUDA - Random Forest]: Vector Size 50000000
+[CUDA - Random Forest]: Start Reading Dataset
+[CUDA - Random Forest]: Finished Reading Dataset
+[CUDA - Random Forest]: _RF_CALC_4TREE_7LV_1INPUT_50000000 - execution time = 46.951904ms
+[CUDA - Random Forest]: Time spent: 46.951904.
+3.000 
+ 
+----------------------------------------------------------
+***********************************************************
+Experiment _RF_CALC_4TREE_7LV_1INPUT_100000000
+
+BRA.UNI = 0
+SETP = 764
+ADD = 822
+AND = 252
+SELP = 763
+
+[CUDA - Random Forest]: EXP _RF_CALC_4TREE_7LV_1INPUT_100000000
+[CUDA - Random Forest]: Using Device 0: NVIDIA GeForce GTX 1070
+[CUDA - Random Forest]: Vector Size 100000000
+[CUDA - Random Forest]: Start Reading Dataset
+[CUDA - Random Forest]: Finished Reading Dataset
+[CUDA - Random Forest]: _RF_CALC_4TREE_7LV_1INPUT_100000000 - execution time = 94.911453ms
+[CUDA - Random Forest]: Time spent: 94.911453.
+3.000 
+ 
+----------------------------------------------------------

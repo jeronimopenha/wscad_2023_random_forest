@@ -1,0 +1,11 @@
+{
+    "[python]": {
+        "editor.defaultFormatter": "ms-python.python"
+    },
+    "python.formatting.provider": "none",
+    "files.associations": {
+        "tuple": "cpp",
+        "cmath": "cpp",
+        "string.h": "c"
+    }
+}

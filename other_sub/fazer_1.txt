@@ -1,0 +1,20 @@
+Tabela fake no banco de registros - pra enganar o comp tem de colocar um parâmetro na inicialização do table - tem de vir de fora e TH tbm. Análise sobre o impacto da indiração
+
+cooperação de thread 2 a 2 
+
+### árvore 5 niveis com diverência de 32 o tempo todo
+
+
+
+
+### Colocar as figuras de 1 e 4 árvores
+
+### Colocar uma figura com 4 árvores com GPUs diferentes 5, 6 e 7 lv CALC e IF V100 T4 e 1070
+
+### Linhas das comparações com as implementações com as tabelas
+
+### Gráfico dos 10-5 e 5-10 - mais vantagem ter mais árvores de menor profundidade
+
+Mostrar número de amostras por segundo em função da profundidade e do número de árvores
+
+Seção de memórias: Tirar tempos das tabelas e resultados

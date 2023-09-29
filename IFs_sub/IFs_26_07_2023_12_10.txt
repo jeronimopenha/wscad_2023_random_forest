@@ -1,0 +1,76 @@
+***********************************************************
+Experiment _RF_1023IF_5TREE_1INPUT__BEST_50000000
+
+BRA.UNI = 10230
+SETP = 5116
+ADD = 2563
+AND = 0
+SELP = 0
+
+[CUDA - Random Forest]: EXP _RF_1023IF_5TREE_1INPUT__BEST_50000000
+[CUDA - Random Forest]: Using Device 0: NVIDIA GeForce GTX 1070
+[CUDA - Random Forest]: Vector Size 50000000
+[CUDA - Random Forest]: Start Reading Dataset
+[CUDA - Random Forest]: Finished Reading Dataset
+[CUDA - Random Forest]: _RF_1023IF_5TREE_1INPUT__BEST_50000000 - execution time = 6.205696ms
+[CUDA - Random Forest]: Time spent: 6.205696.
+0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 Return correct
+ 
+----------------------------------------------------------
+***********************************************************
+Experiment _RF_1023IF_5TREE_1INPUT__BEST_100000000
+
+BRA.UNI = 10230
+SETP = 5116
+ADD = 2563
+AND = 0
+SELP = 0
+
+[CUDA - Random Forest]: EXP _RF_1023IF_5TREE_1INPUT__BEST_100000000
+[CUDA - Random Forest]: Using Device 0: NVIDIA GeForce GTX 1070
+[CUDA - Random Forest]: Vector Size 100000000
+[CUDA - Random Forest]: Start Reading Dataset
+[CUDA - Random Forest]: Finished Reading Dataset
+[CUDA - Random Forest]: _RF_1023IF_5TREE_1INPUT__BEST_100000000 - execution time = 12.398880ms
+[CUDA - Random Forest]: Time spent: 12.398880.
+0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 Return correct
+ 
+----------------------------------------------------------
+***********************************************************
+Experiment _RF_1023IF_5TREE_1INPUT__WORST_50000000
+
+BRA.UNI = 10230
+SETP = 5116
+ADD = 2563
+AND = 0
+SELP = 0
+
+[CUDA - Random Forest]: EXP _RF_1023IF_5TREE_1INPUT__WORST_50000000
+[CUDA - Random Forest]: Using Device 0: NVIDIA GeForce GTX 1070
+[CUDA - Random Forest]: Vector Size 50000000
+[CUDA - Random Forest]: Start Reading Dataset
+[CUDA - Random Forest]: Finished Reading Dataset
+[CUDA - Random Forest]: _RF_1023IF_5TREE_1INPUT__WORST_50000000 - execution time = 117.268990ms
+[CUDA - Random Forest]: Time spent: 117.268990.
+0.000 32.000 64.000 96.000 128.000 160.000 192.000 224.000 256.000 288.000 320.000 352.000 384.000 416.000 448.000 480.000 512.000 544.000 576.000 608.000 640.000 672.000 704.000 736.000 768.000 800.000 832.000 864.000 896.000 928.000 960.000 992.000 Return correct
+ 
+----------------------------------------------------------
+***********************************************************
+Experiment _RF_1023IF_5TREE_1INPUT__WORST_100000000
+
+BRA.UNI = 10230
+SETP = 5116
+ADD = 2563
+AND = 0
+SELP = 0
+
+[CUDA - Random Forest]: EXP _RF_1023IF_5TREE_1INPUT__WORST_100000000
+[CUDA - Random Forest]: Using Device 0: NVIDIA GeForce GTX 1070
+[CUDA - Random Forest]: Vector Size 100000000
+[CUDA - Random Forest]: Start Reading Dataset
+[CUDA - Random Forest]: Finished Reading Dataset
+[CUDA - Random Forest]: _RF_1023IF_5TREE_1INPUT__WORST_100000000 - execution time = 144.820038ms
+[CUDA - Random Forest]: Time spent: 144.820038.
+0.000 32.000 64.000 96.000 128.000 160.000 192.000 224.000 256.000 288.000 320.000 352.000 384.000 416.000 448.000 480.000 512.000 544.000 576.000 608.000 640.000 672.000 704.000 736.000 768.000 800.000 832.000 864.000 896.000 928.000 960.000 992.000 Error!!
+ 
+----------------------------------------------------------

@@ -1,0 +1,330 @@
+int rt0_0_0 = (input[i] > (1+offset0));
+int t0_0_0 = rt0_0_0 * (2 + (input[i] > (2+offset0)));
+t0_0_0 += (1 - rt0_0_0) * (input[i] > (0+offset0));
+
+int rt0_0_1 = (input[i] > (5+offset0));
+int t0_0_1 = rt0_0_1 * (2 + (input[i] > (6+offset0)));
+t0_0_1 += (1 - rt0_0_1) * (input[i] > (4+offset0));
+
+int rt0_1_0 = (input[i] > (3+offset0));
+int t0_1_0 = rt0_1_0 * (4 + t0_0_1);
+t0_1_0 += (1 - rt0_1_0) * t0_0_0;
+
+vR[i] = t0_1_0;
+
+linha 0: th = 3, left = 1<<10, right = 2<<2, var = 0
+linha 1: th = 5, left = 3, right = 4, var = 0
+linha 2: th = 1, left = 5, right = 6, var = 0
+linha 3: th = 6, left = 7, right = 8, var = 0
+linha 4: th = 4, left = 9, right = 10, var = 0
+linha 5: th = 2, left = 11, right = 12, var = 0
+linha 6: th = 0, left = 13, right = 14, var = 0
+linha 7: 7
+linha 8: 6
+linha 9: 5
+linha 10: 4
+linha 11: 3
+linha 12: 2
+linha 13: 1
+linha 14: 0
+
+
+- FEITO
+Fazer 10 árvores de 5 e 5 de 10 com IF
+- FEITO
+10 de 5 com calc
+
+
+Construir a tabel e testar as versões abaixo para 3níveis 7IF
+com 1 a 4 árvores
+com restrict
+com global
+
+Construir a tabel e testar as versões abaixo para 3níveis 7IF
+com 1 a 4 árvores
+com restrict
+
+Construir a tabel e testar as versões abaixo para 3níveis 7IF
+com 1 a 4 árvores
+com restrict
+com shared
+
+Construir a tabel e testar as versões abaixo para 3níveis 7IF
+com 1 a 4 árvores
+com restrict
+constante externa
+
+- curiosidade -
+Apenas para o IF3 testar a tabela na memória local. - Compilar com Xptxas=-v
+Depois testar com a de 2
+---------------
+
+versão com sem indireção - variável fixa - bdd
+
+se cada th fizer 2 árvores
+warp0 - faz 2 - if(threadIdx.x < 32) árvore 0
+else if (threadIdx.x < 64)
+warp1 - faz 2 com mesma var do warp0 árvore 1 etc
+
+160 threads por block
+
+int i = blockIdx.x * blockDim.x + threadIdx.x%32;
+
+
+-------------------------------------------------------------------------------------
+
+linha 000: th = 063, left = 001, right = 002
+linha 001: th = 095, left = 003, right = 004
+linha 002: th = 031, left = 005, right = 006
+linha 003: th = 111, left = 007, right = 008
+linha 004: th = 079, left = 009, right = 010
+linha 005: th = 047, left = 011, right = 012
+linha 006: th = 015, left = 013, right = 014
+linha 007: th = 119, left = 015, right = 016
+linha 008: th = 103, left = 017, right = 018 
+linha 009: th = 087, left = 018, right = 020 
+linha 010: th = 071, left = 021, right = 022 
+linha 011: th = 055, left = 023, right = 024 
+linha 012: th = 039, left = 025, right = 026 
+linha 013: th = 023, left = 027, right = 028 
+linha 014: th = 007, left = 028, right = 030 
+linha 015: th = 123, left = 031, right = 032
+linha 016: th = 115, left = 033, right = 034
+linha 017: th = 107, left = 035, right = 036
+linha 018: th = 099, left = 037, right = 038
+linha 019: th = 091, left = 039, right = 040
+linha 020: th = 083, left = 041, right = 042
+linha 021: th = 075, left = 043, right = 044
+linha 022: th = 067, left = 045, right = 046
+linha 023: th = 059, left = 047, right = 048
+linha 024: th = 051, left = 049, right = 050
+linha 025: th = 043, left = 051, right = 052
+linha 026: th = 035, left = 053, right = 054
+linha 027: th = 027, left = 055, right = 056
+linha 028: th = 019, left = 057, right = 058
+linha 029: th = 011, left = 059, right = 060
+linha 030: th = 003, left = 061, right = 062
+linha 031: th = 125, left = 063, right = 064
+linha 032: th = 121, left = 065, right = 066
+linha 033: th = 117, left = 067, right = 068
+linha 034: th = 113, left = 069, right = 070
+linha 035: th = 109, left = 071, right = 072
+linha 036: th = 105, left = 073, right = 074
+linha 037: th = 101, left = 075, right = 076
+linha 038: th = 097, left = 077, right = 078
+linha 039: th = 093, left = 079, right = 080
+linha 040: th = 089, left = 081, right = 082
+linha 041: th = 085, left = 083, right = 084
+linha 042: th = 081, left = 085, right = 086
+linha 043: th = 077, left = 087, right = 088
+linha 044: th = 073, left = 089, right = 090
+linha 045: th = 069, left = 091, right = 092
+linha 046: th = 065, left = 093, right = 094
+linha 047: th = 061, left = 095, right = 096
+linha 048: th = 057, left = 097, right = 098
+linha 049: th = 053, left = 099, right = 100
+linha 050: th = 049, left = 101, right =102
+linha 051: th = 045, left = 103, right =104 
+linha 052: th = 041, left = 105, right =106
+linha 053: th = 037, left = 107, right =108
+linha 054: th = 033, left = 109, right =110
+linha 055: th = 029, left = 111, right =112
+linha 056: th = 025, left = 113, right =114
+linha 057: th = 021, left = 115, right =116
+linha 058: th = 017, left = 117, right =118
+linha 059: th = 013, left = 119, right =120
+linha 060: th = 009, left = 121, right =122
+linha 061: th = 005, left = 123, right =124
+linha 062: th = 001, left = 125, right =126
+linha 063: th = 126, left = 127, right =128
+linha 064: th = 124, left = 129, right =130
+linha 065: th = 122, left = 131, right =132
+linha 066: th = 120, left = 133, right =134
+linha 067: th = 118, left = 135, right =136
+linha 068: th = 116, left = 137, right =138
+linha 069: th = 114, left = 139, right =140
+linha 070: th = 112, left = 141, right =142
+linha 071: th = 110, left = 143, right =144
+linha 072: th = 108, left = 145, right =146
+linha 073: th = 106, left = 147, right =148
+linha 074: th = 104, left = 149, right =150
+linha 075: th = 102, left = 151, right =152
+linha 076: th = 100, left = 153, right =154
+linha 077: th = 098, left = 155, right =156
+linha 078: th = 096, left = 157, right =158
+linha 079: th = 094, left = 159, right =160
+linha 080: th = 092, left = 161, right =162
+linha 081: th = 090, left = 163, right =164
+linha 082: th = 088, left = 165, right =166
+linha 083: th = 086, left = 167, right =168
+linha 084: th = 084, left = 169, right =170
+linha 085: th = 082, left = 171, right =172
+linha 086: th = 080, left = 173, right =174
+linha 087: th = 078, left = 175, right =176
+linha 088: th = 076, left = 177, right =178
+linha 089: th = 074, left = 179, right =180
+linha 090: th = 072, left = 181, right =182
+linha 091: th = 070, left = 183, right =184
+linha 092: th = 068, left = 185, right =186
+linha 093: th = 066, left = 187, right =188
+linha 094: th = 064, left = 189, right =190
+linha 095: th = 062, left = 191, right =192
+linha 096: th = 060, left = 193, right =194
+linha 097: th = 058, left = 195, right =196
+linha 098: th = 056, left = 197, right =198
+linha 099: th = 054, left = 199, right =200
+linha 100: th = 052, left = 201, right =202
+linha 101: th = 050, left = 203, right =204
+linha 102: th = 048, left = 205, right =206
+linha 103: th = 046, left = 207, right =208
+linha 104: th = 044, left = 209, right =210
+linha 105: th = 042, left = 211, right =212
+linha 106: th = 040, left = 213, right =214
+linha 107: th = 038, left = 215, right =216
+linha 108: th = 036, left = 217, right =218
+linha 109: th = 034, left = 219, right =220
+linha 110: th = 032, left = 221, right =222
+linha 111: th = 030, left = 223, right =224
+linha 112: th = 028, left = 225, right =226
+linha 113: th = 026, left = 227, right =228
+linha 114: th = 024, left = 229, right =230
+linha 115: th = 022, left = 231, right =232
+linha 116: th = 020, left = 233, right =234
+linha 117: th = 018, left = 235, right =236
+linha 118: th = 016, left = 237, right =238
+linha 119: th = 014, left = 239, right =240
+linha 120: th = 012, left = 241, right =242
+linha 121: th = 010, left = 243, right =244
+linha 122: th = 008, left = 245, right =246
+linha 123: th = 006, left = 247, right =248
+linha 124: th = 004, left = 249, right =250
+linha 125: th = 002, left = 251, right =252
+linha 126: th = 000, left = 253, right =254
+linha 127: 127
+linha 128: 126
+linha 129: 125
+linha 130: 124
+linha 131: 123
+linha 132: 122
+linha 133: 121
+linha 134: 120
+linha 135: 119
+linha 136: 118
+linha 137: 117
+linha 138: 116
+linha 139: 115
+linha 140: 114
+linha 141: 113
+linha 142: 112
+linha 143: 111
+linha 144: 110
+linha 145: 109
+linha 146: 108
+linha 147: 107
+linha 148: 106
+linha 149: 105
+linha 150: 104
+linha 151: 103
+linha 152: 102
+linha 153: 101
+linha 154: 100
+linha 155: 099
+linha 156: 098
+linha 157: 097
+linha 158: 096
+linha 159: 095
+linha 160: 094
+linha 161: 093
+linha 162: 092
+linha 163: 091
+linha 164: 090
+linha 165: 089
+linha 166: 088
+linha 167: 087
+linha 168: 086
+linha 169: 085
+linha 170: 084
+linha 171: 083
+linha 172: 082
+linha 173: 081
+linha 174: 080
+linha 175: 079
+linha 176: 078
+linha 177: 077
+linha 178: 076
+linha 179: 075
+linha 180: 074
+linha 181: 073
+linha 182: 072
+linha 183: 071
+linha 184: 070
+linha 185: 069
+linha 186: 068
+linha 187: 067
+linha 188: 066
+linha 189: 065
+linha 190: 064
+linha 191: 063
+linha 192: 062
+linha 193: 061
+linha 194: 060
+linha 195: 059
+linha 196: 058
+linha 197: 057
+linha 198: 056
+linha 199: 055
+linha 200: 054
+linha 201: 053
+linha 202: 052
+linha 203: 051
+linha 204: 050
+linha 205: 049
+linha 206: 048
+linha 207: 047
+linha 208: 046
+linha 209: 045
+linha 200: 044
+linha 211: 043
+linha 212: 042
+linha 213: 041
+linha 214: 040
+linha 215: 039
+linha 216: 038
+linha 217: 037
+linha 218: 036
+linha 219: 035
+linha 220: 034
+linha 221: 033
+linha 222: 032
+linha 223: 031
+linha 224: 030
+linha 225: 029
+linha 226: 028
+linha 227: 027
+linha 228: 026
+linha 229: 025
+linha 230: 024
+linha 231: 023
+linha 232: 022
+linha 233: 021
+linha 234: 020
+linha 235: 019
+linha 236: 018
+linha 237: 017
+linha 238: 016
+linha 239: 015
+linha 240: 014
+linha 241: 013
+linha 242: 012
+linha 243: 011
+linha 244: 010
+linha 245: 009
+linha 246: 008
+linha 247: 007
+linha 248: 006
+linha 249: 005
+linha 250: 004
+linha 251: 003
+linha 252: 002
+linha 253: 001
+linha 254: 000
